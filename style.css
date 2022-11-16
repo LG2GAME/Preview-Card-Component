@@ -1,0 +1,134 @@
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Outfit', sans-serif;
+}
+
+:root {
+
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+
+    --very-dark-blue-bg: hsl(217, 54%, 11%); /* main bg */
+    --very-dark-blue-card: hsl(216, 50%, 16%); /* card bg */
+    --very-dark-blue-line: hsl(215, 32%, 27%); /* line */
+    --white: hsl(0, 0%, 100%);
+}
+
+p {
+    font-size: 18px;
+}
+
+body {
+    background-color: var(--very-dark-blue-bg);
+}
+
+.container {
+    background-color: var(--very-dark-blue-card);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    height: 680px;
+    justify-content: space-around;
+    left: 50%;
+    padding: 0 25px;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 380px;
+}
+
+.img {
+    background-color: #fff;
+    background-image: url("images/image-equilibrium.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px;
+    height: 330px;
+    width: 330px;
+}
+
+.title {
+    color: var(--white);
+    font-size: 24px;
+    text-decoration: none;
+    transition: color .5s ease;
+}
+
+.title:hover {
+    color: var(--cyan);
+}
+
+.paragraph {
+    color: var(--very-dark-blue-line);
+}
+
+.container-footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.price, .time {
+    display: flex;
+}
+
+.price img, .time img {
+    display: flex;
+    padding-right: .5rem;
+}
+
+.time {
+    display: flex;
+    align-items: center;
+}
+
+.price p {
+    color: var(--cyan);
+}
+
+.time p {
+    color: var(--very-dark-blue-line);
+}
+
+.name {
+    align-items: center;
+    border-top: 2px solid var(--very-dark-blue-line);
+    display: flex;
+    padding: 1rem;
+}
+
+.name img {
+    border-radius: 50%;
+    border: 1px solid var(--white);
+    margin-right: 1rem;
+    width: 32px;
+}
+
+.name p {
+    color: var(--very-dark-blue-line);
+}
+
+.name a {
+    text-decoration: none;
+    transition: color .5s ease;
+    color: var(--white);
+}
+
+.name a:hover {
+    color: var(--cyan);
+}
+
+/* about author and quest */
+.attribution {
+    font-size: 11px; text-align: center;
+    margin: 0 0 1rem 0;
+    bottom: 0;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
