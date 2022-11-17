@@ -32,32 +32,61 @@ body {
     border-radius: 15px;
     display: flex;
     flex-direction: column;
-    height: 680px;
+    height: 600px;
     justify-content: space-around;
     left: 50%;
     padding: 0 25px;
     position: absolute;
     top: 50%;
     transform: translate(-50%, -50%);
-    width: 380px;
+    width: 350px;
 }
 
 .img {
-    background-color: #fff;
-    background-image: url("images/image-equilibrium.jpg");
+    background-color: var(--cyan);
+    border-radius: 18px;
+    height: 300px;
+    width: 300px;
+}
+
+.img img {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 15px;
-    height: 330px;
-    width: 330px;
+    height: 300px;
+    width: 300px;
+    cursor: pointer;
+    transition: opacity .3s ease-in-out;
+}
+
+.img:hover img {
+    opacity: 0.5;
+}
+
+.img-view {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("images/icon-view.svg");
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.img:hover .img-view {
+    z-index: 1;
 }
 
 .title {
     color: var(--white);
     font-size: 24px;
     text-decoration: none;
-    transition: color .5s ease;
+    transition: color .3s ease-in-out;
 }
 
 .title:hover {
@@ -115,7 +144,7 @@ body {
 
 .name a {
     text-decoration: none;
-    transition: color .5s ease;
+    transition: color .3s ease-in-out;
     color: var(--white);
 }
 
@@ -128,7 +157,8 @@ body {
     font-size: 11px; text-align: center;
     margin: 0 0 1rem 0;
     bottom: 0;
+    color: #fff;
 }
 .attribution a {
-    color: hsl(228, 45%, 44%);
+    color: var(--cyan);
 }
